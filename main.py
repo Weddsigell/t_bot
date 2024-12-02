@@ -43,8 +43,8 @@ def render_progressbar(total, iteration, prefix='', suffix='', length=30, fill='
 def main():
     load_dotenv()
     global bot
-    TG_TOKEN = os.environ['TG_TOKEN']
-    bot = ptbot.Bot(TG_TOKEN)
+    Tg_Tоken = os.environ['TG_TOKEN']
+    bot = ptbot.Bot(Tg_Tоken)
     bot.reply_on_message(message_processing)
     bot.run_bot()
 
